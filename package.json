@@ -14,6 +14,7 @@
   "author": "Sean Guthrie",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "json-loader": "^0.5.4",
