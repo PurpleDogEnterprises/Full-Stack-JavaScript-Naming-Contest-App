@@ -1,9 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import express from 'express';
+import data from '../src/testData';
 
-import App from './components/App';
+const router = express.Router();
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+router.get('/contests', (req, res) => {
+  res.send({ contests: data.contests });
+});
+
+export default router;
